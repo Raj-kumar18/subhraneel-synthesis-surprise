@@ -36,9 +36,9 @@ const PeriodicMessage = () => {
         Periodic Table of Wedding Wishes
       </h2>
 
-      <Card className="bg-slate-800/70 backdrop-blur-lg border-white/30 shadow-2xl mb-12 relative overflow-hidden animate-fade-in hover:scale-105 transition-all duration-500">
+      <Card className="bg-slate-800/90 backdrop-blur-lg border-white/30 shadow-2xl mb-12 relative overflow-hidden animate-fade-in hover:scale-105 transition-all duration-500">
         <CardContent className="p-10">
-          <h3 className="text-3xl md:text-4xl font-bold text-center text-white mb-10 animate-bounce bg-slate-700/40 inline-block px-6 py-3 rounded-lg backdrop-blur-sm">CONGRATULATIONS</h3>
+          <h3 className="text-3xl md:text-4xl font-bold text-center text-white mb-10 animate-bounce bg-slate-700/80 inline-block px-6 py-3 rounded-lg backdrop-blur-sm border border-white/20">CONGRATULATIONS</h3>
           <div className="grid grid-cols-6 md:grid-cols-12 gap-3 justify-center">
             {periodicElements[0].map((element, index) => (
               <div
@@ -57,21 +57,21 @@ const PeriodicMessage = () => {
         </CardContent>
       </Card>
 
-      <h3 className="text-3xl md:text-4xl font-bold text-center text-white mb-10 animate-bounce bg-slate-800/50 inline-block px-6 py-3 rounded-lg backdrop-blur-sm">
+      <h3 className="text-3xl md:text-4xl font-bold text-center text-white mb-10 animate-bounce bg-slate-800/80 inline-block px-6 py-3 rounded-lg backdrop-blur-sm border border-white/20">
         Special Wedding Elements
       </h3>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
         {weddingElements.map((element, index) => (
-          <Card key={index} className={`bg-slate-800/60 backdrop-blur-lg border-white/30 shadow-xl hover:scale-110 transition-all duration-500 ${element.glow} animate-fade-in`}
+          <Card key={index} className={`bg-slate-800/90 backdrop-blur-lg border-white/30 shadow-xl hover:scale-110 transition-all duration-500 ${element.glow} animate-fade-in`}
                 style={{ animationDelay: `${index * 0.2}s` }}>
             <CardContent className="p-8 text-center">
               <div className={`inline-block bg-gradient-to-br ${element.color} rounded-xl p-6 mb-6 border border-white/40 shadow-xl transform hover:rotate-12 transition-all duration-500 animate-pulse`}>
                 <div className="text-sm text-white opacity-90 font-bold">{element.number}</div>
                 <div className="text-3xl font-bold text-white">{element.symbol}</div>
               </div>
-              <h4 className="text-xl font-bold text-white mb-3 bg-slate-700/40 inline-block px-3 py-1 rounded-lg backdrop-blur-sm">{element.name}</h4>
-              <p className="text-sm text-slate-200 bg-slate-700/50 rounded-lg p-3 border border-white/30 backdrop-blur-sm">
+              <h4 className="text-xl font-bold text-white mb-3 bg-slate-700/80 inline-block px-3 py-1 rounded-lg backdrop-blur-sm border border-white/20">{element.name}</h4>
+              <p className="text-sm text-slate-200 bg-slate-700/80 rounded-lg p-3 border border-white/30 backdrop-blur-sm">
                 Essential element for a perfect marriage
               </p>
             </CardContent>
@@ -79,13 +79,13 @@ const PeriodicMessage = () => {
         ))}
       </div>
 
-      <Card className="bg-slate-800/70 backdrop-blur-lg border-purple-400/40 shadow-2xl animate-fade-in hover:scale-105 transition-all duration-500">
+      <Card className="bg-slate-800/90 backdrop-blur-lg border-purple-400/40 shadow-2xl animate-fade-in hover:scale-105 transition-all duration-500">
         <CardContent className="p-12 text-center">
           <h3 className="text-2xl md:text-3xl font-bold text-white mb-8 animate-bounce">Chemical Formula for Marriage</h3>
-          <div className="text-4xl md:text-5xl font-bold text-yellow-400 mb-8 font-mono bg-slate-700/50 inline-block px-6 py-4 rounded-lg border border-yellow-400/40 animate-pulse backdrop-blur-sm">
+          <div className="text-4xl md:text-5xl font-bold text-yellow-400 mb-8 font-mono bg-slate-700/80 inline-block px-6 py-4 rounded-lg border border-yellow-400/40 animate-pulse backdrop-blur-sm">
             2❤️ + 1💒 → ∞💕
           </div>
-          <div className="bg-slate-700/50 rounded-xl p-8 border border-white/30 max-w-2xl mx-auto backdrop-blur-sm">
+          <div className="bg-slate-700/80 rounded-xl p-8 border border-white/30 max-w-2xl mx-auto backdrop-blur-sm">
             <p className="text-lg md:text-xl text-slate-100 font-medium">
               When two hearts combine in the presence of love,<br />
               they create an infinite bond that lasts forever!

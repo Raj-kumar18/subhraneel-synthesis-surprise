@@ -53,7 +53,7 @@ const MolecularStructure = () => {
         Molecules of Marriage
       </h2>
       
-      <Card className="bg-slate-800/70 backdrop-blur-lg border-white/30 shadow-2xl mb-10 relative overflow-hidden transform hover:scale-105 transition-all duration-700 animate-fade-in">
+      <Card className="bg-slate-800/90 backdrop-blur-lg border-white/30 shadow-2xl mb-10 relative overflow-hidden transform hover:scale-105 transition-all duration-700 animate-fade-in">
         {/* Subtle glowing background effect */}
         <div className={`absolute inset-0 bg-gradient-to-r ${molecules[currentMolecule].bgGlow} blur-xl animate-pulse`}></div>
         
@@ -74,13 +74,13 @@ const MolecularStructure = () => {
               <div className="absolute top-1/2 right-1/3 text-yellow-400 animate-bounce delay-500 text-xl">✨</div>
             </div>
             
-            <div className="bg-slate-700/60 rounded-xl p-6 border border-cyan-400/40 mb-8 backdrop-blur-sm animate-fade-in">
+            <div className="bg-slate-700/90 rounded-xl p-6 border border-cyan-400/40 mb-8 backdrop-blur-sm animate-fade-in">
               <p className="text-2xl md:text-3xl text-cyan-300 font-mono font-bold">
                 {molecules[currentMolecule].formula}
               </p>
             </div>
             
-            <p className="text-lg md:text-xl text-slate-100 bg-slate-700/50 rounded-lg p-6 border border-white/30 max-w-2xl mx-auto backdrop-blur-sm">
+            <p className="text-lg md:text-xl text-slate-100 bg-slate-700/80 rounded-lg p-6 border border-white/30 max-w-2xl mx-auto backdrop-blur-sm">
               {molecules[currentMolecule].description}
             </p>
           </div>
@@ -94,8 +94,8 @@ const MolecularStructure = () => {
             onClick={() => setCurrentMolecule(index)}
             className={`p-6 rounded-xl border-2 transition-all duration-500 transform hover:scale-110 animate-fade-in ${
               currentMolecule === index
-                ? 'border-cyan-400 bg-slate-700/70 shadow-xl shadow-cyan-400/30 backdrop-blur-sm'
-                : 'border-white/40 bg-slate-800/50 hover:bg-slate-700/60 backdrop-blur-sm'
+                ? 'border-cyan-400 bg-slate-700/90 shadow-xl shadow-cyan-400/30 backdrop-blur-sm'
+                : 'border-white/40 bg-slate-800/80 hover:bg-slate-700/90 backdrop-blur-sm'
             }`}
             style={{ animationDelay: `${index * 0.2}s` }}
           >
@@ -109,14 +109,14 @@ const MolecularStructure = () => {
         ))}
       </div>
 
-      <Card className="bg-slate-800/70 backdrop-blur-lg border-purple-400/40 shadow-2xl animate-fade-in hover:scale-105 transition-all duration-500">
+      <Card className="bg-slate-800/90 backdrop-blur-lg border-purple-400/40 shadow-2xl animate-fade-in hover:scale-105 transition-all duration-500">
         <CardContent className="p-10 text-center">
           <div className="flex items-center justify-center mb-6 animate-bounce">
             <span className="text-3xl animate-pulse">💖</span>
             <span className="text-3xl mx-4 animate-spin">⚗️</span>
             <span className="text-3xl animate-pulse">💖</span>
           </div>
-          <p className="text-slate-100 text-xl md:text-2xl font-medium bg-slate-700/40 p-6 rounded-lg backdrop-blur-sm">
+          <p className="text-slate-100 text-xl md:text-2xl font-medium bg-slate-700/80 p-6 rounded-lg backdrop-blur-sm border border-white/20">
             "Your marriage will be a perfect synthesis of all these beautiful molecules!"
           </p>
           <div className="mt-6 text-3xl animate-bounce">

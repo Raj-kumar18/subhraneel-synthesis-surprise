@@ -145,29 +145,29 @@ const ChemistryWeddingGift = () => {
               
               <div className="flex items-center justify-center gap-4 text-xl text-cyan-300 mb-10 animate-bounce">
                 <Heart className="w-7 h-7 text-red-400 animate-pulse" fill="currentColor" />
-                <span className="font-mono text-white bg-slate-800/70 px-4 py-2 rounded-lg border border-cyan-500/40 shadow-lg backdrop-blur-sm">
+                <span className="font-mono text-white bg-slate-800/90 px-4 py-2 rounded-lg border border-cyan-500/40 shadow-lg backdrop-blur-sm">
                   C₂₅H₃₂N₆O₄
                 </span>
                 <Heart className="w-7 h-7 text-red-400 animate-pulse" fill="currentColor" />
               </div>
               
               <div className="space-y-4">
-                <p className="text-xl text-blue-200 bg-slate-800/30 inline-block px-4 py-2 rounded-lg backdrop-blur-sm">A Special Wedding Gift For</p>
+                <p className="text-xl text-blue-200 bg-slate-800/80 inline-block px-4 py-2 rounded-lg backdrop-blur-sm border border-white/20">A Special Wedding Gift For</p>
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 bg-clip-text text-transparent animate-pulse">
                   Prof. Subhraneel Mukherjee Sir
                 </h2>
                 <div className="space-y-2">
-                  <p className="text-lg text-slate-200 bg-slate-800/40 inline-block px-3 py-1 rounded-lg backdrop-blur-sm">
+                  <p className="text-lg text-slate-200 bg-slate-800/80 inline-block px-3 py-1 rounded-lg backdrop-blur-sm border border-white/20">
                     🧪 Master of Organic & Inorganic Chemistry
                   </p>
-                  <p className="text-lg text-slate-200 bg-slate-800/40 inline-block px-3 py-1 rounded-lg backdrop-blur-sm">
+                  <p className="text-lg text-slate-200 bg-slate-800/80 inline-block px-3 py-1 rounded-lg backdrop-blur-sm border border-white/20">
                     🎯 IIT JEE Mentor Extraordinaire
                   </p>
                 </div>
               </div>
             </div>
 
-            <Card className="bg-slate-800/60 backdrop-blur-lg border-white/30 shadow-2xl mb-10 max-w-4xl mx-auto hover:bg-slate-800/70 transition-all duration-500 hover:scale-105 animate-fade-in">
+            <Card className="bg-slate-800/90 backdrop-blur-lg border-white/30 shadow-2xl mb-10 max-w-4xl mx-auto hover:bg-slate-800/95 transition-all duration-500 hover:scale-105 animate-fade-in">
               <CardContent className="p-10">
                 <div className="flex items-center justify-center mb-8 animate-bounce">
                   <Sparkles className="w-8 h-8 text-yellow-400 mr-4 animate-spin" />
@@ -175,18 +175,18 @@ const ChemistryWeddingGift = () => {
                   <Sparkles className="w-8 h-8 text-yellow-400 ml-4 animate-spin" />
                 </div>
                 
-                <p className="text-lg text-slate-100 leading-relaxed mb-8 max-w-3xl mx-auto bg-slate-700/30 p-6 rounded-lg backdrop-blur-sm">
+                <p className="text-lg text-slate-100 leading-relaxed mb-8 max-w-3xl mx-auto bg-slate-700/70 p-6 rounded-lg backdrop-blur-sm border border-white/20">
                   Just like how two elements combine to form a stable compound, 
                   may your union create the most beautiful and enduring bond! 
                   Your dedication to teaching chemistry has inspired countless students, 
                   and now you're about to embark on the most wonderful reaction of your life.
                 </p>
                 
-                <div className="text-3xl font-bold text-yellow-400 mb-6 font-mono bg-slate-700/50 inline-block px-6 py-3 rounded-lg border border-yellow-400/40 animate-pulse backdrop-blur-sm">
+                <div className="text-3xl font-bold text-yellow-400 mb-6 font-mono bg-slate-700/80 inline-block px-6 py-3 rounded-lg border border-yellow-400/40 animate-pulse backdrop-blur-sm">
                   H₂ + O₂ → H₂O + 💕
                 </div>
                 
-                <div className="bg-slate-700/40 rounded-lg p-6 border border-blue-400/30 backdrop-blur-sm">
+                <div className="bg-slate-700/80 rounded-lg p-6 border border-blue-400/30 backdrop-blur-sm">
                   <p className="text-lg text-blue-100 italic font-medium">
                     "Where love is the catalyst for a perfect reaction"
                   </p>
@@ -226,17 +226,17 @@ const ChemistryWeddingGift = () => {
               </Button>
             </div>
 
-            <Card className="bg-slate-800/60 backdrop-blur-lg border-purple-400/40 shadow-2xl max-w-3xl mx-auto animate-fade-in hover:scale-105 transition-all duration-500">
+            <Card className="bg-slate-800/90 backdrop-blur-lg border-purple-400/40 shadow-2xl max-w-3xl mx-auto animate-fade-in hover:scale-105 transition-all duration-500">
               <CardContent className="p-10">
                 <div className="flex items-center justify-center mb-6 animate-pulse">
                   <Gift className="w-8 h-8 text-yellow-400 mr-3 animate-bounce" />
                   <Star className="w-6 h-6 text-yellow-400 animate-spin" />
                   <Gift className="w-8 h-8 text-yellow-400 ml-3 animate-bounce" />
                 </div>
-                <p className="text-slate-100 text-xl mb-4 font-medium bg-slate-700/30 p-4 rounded-lg backdrop-blur-sm">
+                <p className="text-slate-100 text-xl mb-4 font-medium bg-slate-700/70 p-4 rounded-lg backdrop-blur-sm border border-white/20">
                   "May your marriage have all the right elements for a perfect reaction!"
                 </p>
-                <p className="text-yellow-400 text-lg bg-slate-700/40 inline-block px-4 py-2 rounded-lg backdrop-blur-sm">
+                <p className="text-yellow-400 text-lg bg-slate-700/80 inline-block px-4 py-2 rounded-lg backdrop-blur-sm border border-white/20">
                   With love and best wishes from your grateful students 💝✨
                 </p>
               </CardContent>
@@ -248,7 +248,7 @@ const ChemistryWeddingGift = () => {
           <div className="text-center animate-fade-in">
             <Button
               onClick={() => setCurrentView('main')}
-              className="mb-8 bg-slate-800/80 hover:bg-slate-700/90 text-white backdrop-blur-lg border-white/40 px-8 py-4 text-lg rounded-xl shadow-xl hover:scale-105 transition-all duration-300"
+              className="mb-8 bg-slate-800/90 hover:bg-slate-700/95 text-white backdrop-blur-lg border-white/40 px-8 py-4 text-lg rounded-xl shadow-xl hover:scale-105 transition-all duration-300"
             >
               ← Back to Main
             </Button>
@@ -260,7 +260,7 @@ const ChemistryWeddingGift = () => {
           <div className="text-center animate-fade-in">
             <Button
               onClick={() => setCurrentView('main')}
-              className="mb-8 bg-slate-800/80 hover:bg-slate-700/90 text-white backdrop-blur-lg border-white/40 px-8 py-4 text-lg rounded-xl shadow-xl hover:scale-105 transition-all duration-300"
+              className="mb-8 bg-slate-800/90 hover:bg-slate-700/95 text-white backdrop-blur-lg border-white/40 px-8 py-4 text-lg rounded-xl shadow-xl hover:scale-105 transition-all duration-300"
             >
               ← Back to Main
             </Button>
@@ -272,7 +272,7 @@ const ChemistryWeddingGift = () => {
           <div className="text-center animate-fade-in">
             <Button
               onClick={() => setCurrentView('main')}
-              className="mb-8 bg-slate-800/80 hover:bg-slate-700/90 text-white backdrop-blur-lg border-white/40 px-8 py-4 text-lg rounded-xl shadow-xl hover:scale-105 transition-all duration-300"
+              className="mb-8 bg-slate-800/90 hover:bg-slate-700/95 text-white backdrop-blur-lg border-white/40 px-8 py-4 text-lg rounded-xl shadow-xl hover:scale-105 transition-all duration-300"
             >
               ← Back to Main
             </Button>

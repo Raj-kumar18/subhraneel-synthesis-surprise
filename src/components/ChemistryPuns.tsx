@@ -64,17 +64,17 @@ const ChemistryPuns = () => {
         Chemistry Puns & Wedding Wishes
       </h2>
 
-      <Card className={`bg-slate-800/70 backdrop-blur-lg border-white/30 shadow-2xl mb-12 relative overflow-hidden transform hover:scale-105 transition-all duration-700 animate-fade-in`}>
+      <Card className="bg-slate-800/90 backdrop-blur-lg border-white/30 shadow-2xl mb-12 relative overflow-hidden transform hover:scale-105 transition-all duration-700 animate-fade-in">
         <CardContent className="p-12 relative z-10">
           <div className="text-center min-h-[350px] flex flex-col justify-center">
             <div className="mb-8">
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-8 bg-slate-700/50 p-4 rounded-lg backdrop-blur-sm animate-bounce">
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-8 bg-slate-700/80 p-4 rounded-lg backdrop-blur-sm animate-bounce border border-white/20">
                 {chemistryPuns[currentPun].setup}
               </h3>
-              <div className="text-2xl md:text-3xl font-bold text-white mb-8 bg-slate-700/60 rounded-xl p-6 border border-white/30 backdrop-blur-sm animate-pulse">
+              <div className="text-2xl md:text-3xl font-bold text-white mb-8 bg-slate-700/90 rounded-xl p-6 border border-white/30 backdrop-blur-sm animate-pulse">
                 {chemistryPuns[currentPun].punchline}
               </div>
-              <div className="bg-slate-700/50 rounded-xl p-6 border border-yellow-400/40 backdrop-blur-sm">
+              <div className="bg-slate-700/80 rounded-xl p-6 border border-yellow-400/40 backdrop-blur-sm">
                 <p className="text-xl text-yellow-300 font-bold animate-bounce">
                   {chemistryPuns[currentPun].reaction}
                 </p>
@@ -100,13 +100,13 @@ const ChemistryPuns = () => {
       </Card>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-        <Card className="bg-slate-800/60 backdrop-blur-lg border-white/30 shadow-xl hover:scale-105 transition-all duration-500 animate-fade-in">
+        <Card className="bg-slate-800/90 backdrop-blur-lg border-white/30 shadow-xl hover:scale-105 transition-all duration-500 animate-fade-in">
           <CardContent className="p-8">
-            <h3 className="text-2xl font-bold text-white mb-6 text-center flex items-center justify-center animate-bounce bg-slate-700/40 p-3 rounded-lg backdrop-blur-sm">
+            <h3 className="text-2xl font-bold text-white mb-6 text-center flex items-center justify-center animate-bounce bg-slate-700/80 p-3 rounded-lg backdrop-blur-sm border border-white/20">
               <span className="text-3xl mr-3 animate-spin">📋</span>
               Wedding Lab Report
             </h3>
-            <div className="space-y-3 text-slate-100 bg-slate-700/50 rounded-xl p-6 border border-white/30 backdrop-blur-sm">
+            <div className="space-y-3 text-slate-100 bg-slate-700/80 rounded-xl p-6 border border-white/30 backdrop-blur-sm">
               <p className="text-base"><strong className="text-yellow-400">Experiment:</strong> Marriage Formation</p>
               <p className="text-base"><strong className="text-yellow-400">Reactants:</strong> Two Hearts ❤️❤️</p>
               <p className="text-base"><strong className="text-yellow-400">Catalyst:</strong> Love 💕</p>
@@ -116,13 +116,13 @@ const ChemistryPuns = () => {
           </CardContent>
         </Card>
 
-        <Card className="bg-slate-800/60 backdrop-blur-lg border-white/30 shadow-xl hover:scale-105 transition-all duration-500 animate-fade-in">
+        <Card className="bg-slate-800/90 backdrop-blur-lg border-white/30 shadow-xl hover:scale-105 transition-all duration-500 animate-fade-in">
           <CardContent className="p-8">
-            <h3 className="text-2xl font-bold text-white mb-6 text-center flex items-center justify-center animate-bounce bg-slate-700/40 p-3 rounded-lg backdrop-blur-sm">
+            <h3 className="text-2xl font-bold text-white mb-6 text-center flex items-center justify-center animate-bounce bg-slate-700/80 p-3 rounded-lg backdrop-blur-sm border border-white/20">
               <span className="text-3xl mr-3 animate-pulse">🧪</span>
               Chemical Properties
             </h3>
-            <div className="space-y-3 text-slate-100 bg-slate-700/50 rounded-xl p-6 border border-white/30 backdrop-blur-sm">
+            <div className="space-y-3 text-slate-100 bg-slate-700/80 rounded-xl p-6 border border-white/30 backdrop-blur-sm">
               <p className="text-base"><strong className="text-yellow-400">Stability:</strong> Extremely High</p>
               <p className="text-base"><strong className="text-yellow-400">Reactivity:</strong> Only with Happiness</p>
               <p className="text-base"><strong className="text-yellow-400">Melting Point:</strong> Never! ❄️</p>
@@ -133,13 +133,13 @@ const ChemistryPuns = () => {
         </Card>
       </div>
 
-      <Card className="bg-slate-800/70 backdrop-blur-lg border-purple-400/40 shadow-2xl animate-fade-in hover:scale-105 transition-all duration-500">
+      <Card className="bg-slate-800/90 backdrop-blur-lg border-purple-400/40 shadow-2xl animate-fade-in hover:scale-105 transition-all duration-500">
         <CardContent className="p-12 text-center">
           <h3 className="text-2xl md:text-3xl font-bold text-white mb-8 animate-bounce">Final Reaction Equation</h3>
-          <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-8 font-mono bg-slate-700/50 inline-block px-6 py-4 rounded-lg border border-yellow-400/40 animate-pulse backdrop-blur-sm">
+          <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-8 font-mono bg-slate-700/80 inline-block px-6 py-4 rounded-lg border border-yellow-400/40 animate-pulse backdrop-blur-sm">
             Prof. Subhraneel + Partner → Perfect Marriage + Endless Joy
           </div>
-          <div className="bg-slate-700/50 rounded-xl p-8 border border-white/30 max-w-2xl mx-auto backdrop-blur-sm">
+          <div className="bg-slate-700/80 rounded-xl p-8 border border-white/30 max-w-2xl mx-auto backdrop-blur-sm">
             <p className="text-lg md:text-xl text-slate-100 font-medium">
               "May your marriage be like a well-balanced equation - <br />
               stable, productive, and yielding beautiful results!"
