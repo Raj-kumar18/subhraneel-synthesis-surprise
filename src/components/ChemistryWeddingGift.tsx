@@ -16,26 +16,26 @@ const ChemistryWeddingGift = () => {
     setShowAnimation(true);
     
     // Generate subtle particle system
-    const newParticles = [...Array(12)].map((_, i) => ({
+    const newParticles = [...Array(15)].map((_, i) => ({
       id: i,
       x: Math.random() * 100,
       y: Math.random() * 100,
       size: Math.random() * 1.5 + 0.8,
       delay: Math.random() * 4,
-      duration: Math.random() * 2 + 4,
-      type: ['✨', '💫', '⭐'][Math.floor(Math.random() * 3)]
+      duration: Math.random() * 3 + 5,
+      type: ['✨', '💫', '⭐', '💎', '🔬'][Math.floor(Math.random() * 5)]
     }));
     setParticles(newParticles);
   }, []);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 relative overflow-hidden">
-      {/* Subtle floating particles background */}
+      {/* Enhanced floating particles background */}
       <div className="absolute inset-0">
         {particles.map((particle) => (
           <div
             key={particle.id}
-            className="absolute animate-pulse opacity-30"
+            className="absolute animate-pulse opacity-20"
             style={{
               left: `${particle.x}%`,
               top: `${particle.y}%`,
@@ -49,22 +49,90 @@ const ChemistryWeddingGift = () => {
         ))}
       </div>
 
-      {/* Subtle chemistry symbols */}
+      {/* Enhanced chemistry symbols and formulas */}
       <div className="absolute inset-0 pointer-events-none">
-        {['H₂O', 'CO₂', 'NaCl', 'C₆H₁₂O₆'].map((formula, i) => (
+        {['H₂O', 'CO₂', 'NaCl', 'C₆H₁₂O₆', 'O₂', 'N₂', 'CH₄', 'NH₃'].map((formula, i) => (
           <div
             key={i}
-            className="absolute text-white/8 text-lg font-mono animate-pulse"
+            className="absolute text-white/10 text-lg font-mono animate-pulse"
             style={{
-              left: `${15 + i * 22}%`,
-              top: `${20 + (i % 2) * 30}%`,
-              animationDelay: `${i * 1.5}s`,
-              animationDuration: '8s'
+              left: `${10 + (i * 12) % 80}%`,
+              top: `${15 + (i % 3) * 25}%`,
+              animationDelay: `${i * 1.2}s`,
+              animationDuration: '10s'
             }}
           >
             {formula}
           </div>
         ))}
+      </div>
+
+      {/* Floating molecular structures */}
+      <div className="absolute inset-0 pointer-events-none">
+        {[...Array(8)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute opacity-5 animate-bounce"
+            style={{
+              left: `${5 + (i * 15) % 90}%`,
+              top: `${10 + (i * 20) % 70}%`,
+              animationDelay: `${i * 2}s`,
+              animationDuration: `${8 + (i % 3)}s`
+            }}
+          >
+            <div className="text-6xl text-white">
+              {['⚛️', '🧪', '🔬', '⚗️'][i % 4]}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Geometric background patterns */}
+      <div className="absolute inset-0 pointer-events-none">
+        {[...Array(6)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute border border-white/5 rounded-full animate-spin"
+            style={{
+              width: `${200 + i * 100}px`,
+              height: `${200 + i * 100}px`,
+              left: `${20 + (i * 15) % 60}%`,
+              top: `${10 + (i * 20) % 60}%`,
+              animationDuration: `${20 + i * 5}s`,
+              animationDirection: i % 2 === 0 ? 'normal' : 'reverse'
+            }}
+          />
+        ))}
+      </div>
+
+      {/* Hexagonal pattern overlay */}
+      <div className="absolute inset-0 pointer-events-none opacity-5">
+        <svg width="100%" height="100%" className="absolute inset-0">
+          <defs>
+            <pattern id="hexPattern" x="0" y="0" width="60" height="52" patternUnits="userSpaceOnUse">
+              <polygon points="30,2 50,16 50,36 30,50 10,36 10,16" 
+                       fill="none" 
+                       stroke="white" 
+                       strokeWidth="1"/>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#hexPattern)" />
+        </svg>
+      </div>
+
+      {/* DNA helix pattern */}
+      <div className="absolute inset-0 pointer-events-none">
+        <svg width="100%" height="100%" className="opacity-10">
+          <defs>
+            <path id="helix" d="M0,0 Q50,25 100,0 T200,0" stroke="white" strokeWidth="2" fill="none"/>
+          </defs>
+          {[...Array(4)].map((_, i) => (
+            <g key={i} transform={`translate(${i * 300}, ${i * 150})`}>
+              <use href="#helix" className="animate-pulse" style={{animationDelay: `${i}s`}} />
+              <use href="#helix" transform="translate(0,20) scale(1,-1)" className="animate-pulse" style={{animationDelay: `${i + 1}s`}} />
+            </g>
+          ))}
+        </svg>
       </div>
 
       <div className="relative z-10 container mx-auto px-6 py-12">
@@ -180,7 +248,7 @@ const ChemistryWeddingGift = () => {
           <div className="text-center animate-fade-in">
             <Button
               onClick={() => setCurrentView('main')}
-              className="mb-8 bg-slate-800/70 hover:bg-slate-700/80 text-white backdrop-blur-lg border-white/40 px-8 py-4 text-lg rounded-xl shadow-xl hover:scale-105 transition-all duration-300"
+              className="mb-8 bg-slate-800/80 hover:bg-slate-700/90 text-white backdrop-blur-lg border-white/40 px-8 py-4 text-lg rounded-xl shadow-xl hover:scale-105 transition-all duration-300"
             >
               ← Back to Main
             </Button>
@@ -192,7 +260,7 @@ const ChemistryWeddingGift = () => {
           <div className="text-center animate-fade-in">
             <Button
               onClick={() => setCurrentView('main')}
-              className="mb-8 bg-slate-800/70 hover:bg-slate-700/80 text-white backdrop-blur-lg border-white/40 px-8 py-4 text-lg rounded-xl shadow-xl hover:scale-105 transition-all duration-300"
+              className="mb-8 bg-slate-800/80 hover:bg-slate-700/90 text-white backdrop-blur-lg border-white/40 px-8 py-4 text-lg rounded-xl shadow-xl hover:scale-105 transition-all duration-300"
             >
               ← Back to Main
             </Button>
@@ -204,7 +272,7 @@ const ChemistryWeddingGift = () => {
           <div className="text-center animate-fade-in">
             <Button
               onClick={() => setCurrentView('main')}
-              className="mb-8 bg-slate-800/70 hover:bg-slate-700/80 text-white backdrop-blur-lg border-white/40 px-8 py-4 text-lg rounded-xl shadow-xl hover:scale-105 transition-all duration-300"
+              className="mb-8 bg-slate-800/80 hover:bg-slate-700/90 text-white backdrop-blur-lg border-white/40 px-8 py-4 text-lg rounded-xl shadow-xl hover:scale-105 transition-all duration-300"
             >
               ← Back to Main
             </Button>
