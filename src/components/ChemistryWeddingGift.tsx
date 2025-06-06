@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Heart, Sparkles, Star, Gift } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -6,6 +5,9 @@ import { Card, CardContent } from '@/components/ui/card';
 import MolecularStructure from './MolecularStructure';
 import PeriodicMessage from './PeriodicMessage';
 import ChemistryPuns from './ChemistryPuns';
+import ChemistryLab from './ChemistryLab';
+import ChemistryQuiz from './ChemistryQuiz';
+import MolecularBuilder from './MolecularBuilder';
 
 const ChemistryWeddingGift = () => {
   const [currentView, setCurrentView] = useState('main');
@@ -194,7 +196,7 @@ const ChemistryWeddingGift = () => {
               </CardContent>
             </Card>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
               <Button
                 onClick={() => setCurrentView('molecules')}
                 className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white py-8 text-lg font-semibold rounded-xl shadow-xl transform transition-all duration-500 hover:scale-110 border border-blue-400/40 animate-fade-in hover:shadow-blue-500/30"
@@ -222,6 +224,36 @@ const ChemistryWeddingGift = () => {
                 <div className="flex flex-col items-center">
                   <span className="text-2xl mb-2 animate-bounce">😄</span>
                   <span>Chemistry Puns</span>
+                </div>
+              </Button>
+
+              <Button
+                onClick={() => setCurrentView('lab')}
+                className="bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white py-8 text-lg font-semibold rounded-xl shadow-xl transform transition-all duration-500 hover:scale-110 border border-cyan-400/40 animate-fade-in hover:shadow-cyan-500/30"
+              >
+                <div className="flex flex-col items-center">
+                  <span className="text-2xl mb-2 animate-pulse">⚗️</span>
+                  <span>Chemistry Lab</span>
+                </div>
+              </Button>
+
+              <Button
+                onClick={() => setCurrentView('quiz')}
+                className="bg-gradient-to-r from-orange-600 to-yellow-600 hover:from-orange-700 hover:to-yellow-700 text-white py-8 text-lg font-semibold rounded-xl shadow-xl transform transition-all duration-500 hover:scale-110 border border-orange-400/40 animate-fade-in hover:shadow-orange-500/30"
+              >
+                <div className="flex flex-col items-center">
+                  <span className="text-2xl mb-2 animate-bounce">🧠</span>
+                  <span>Chemistry Quiz</span>
+                </div>
+              </Button>
+
+              <Button
+                onClick={() => setCurrentView('builder')}
+                className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white py-8 text-lg font-semibold rounded-xl shadow-xl transform transition-all duration-500 hover:scale-110 border border-purple-400/40 animate-fade-in hover:shadow-purple-500/30"
+              >
+                <div className="flex flex-col items-center">
+                  <span className="text-2xl mb-2 animate-spin">🔬</span>
+                  <span>Molecule Builder</span>
                 </div>
               </Button>
             </div>
@@ -277,6 +309,42 @@ const ChemistryWeddingGift = () => {
               ← Back to Main
             </Button>
             <ChemistryPuns />
+          </div>
+        )}
+
+        {currentView === 'lab' && (
+          <div className="text-center animate-fade-in">
+            <Button
+              onClick={() => setCurrentView('main')}
+              className="mb-8 bg-slate-800/90 hover:bg-slate-700/95 text-white backdrop-blur-lg border-white/40 px-8 py-4 text-lg rounded-xl shadow-xl hover:scale-105 transition-all duration-300"
+            >
+              ← Back to Main
+            </Button>
+            <ChemistryLab />
+          </div>
+        )}
+
+        {currentView === 'quiz' && (
+          <div className="text-center animate-fade-in">
+            <Button
+              onClick={() => setCurrentView('main')}
+              className="mb-8 bg-slate-800/90 hover:bg-slate-700/95 text-white backdrop-blur-lg border-white/40 px-8 py-4 text-lg rounded-xl shadow-xl hover:scale-105 transition-all duration-300"
+            >
+              ← Back to Main
+            </Button>
+            <ChemistryQuiz />
+          </div>
+        )}
+
+        {currentView === 'builder' && (
+          <div className="text-center animate-fade-in">
+            <Button
+              onClick={() => setCurrentView('main')}
+              className="mb-8 bg-slate-800/90 hover:bg-slate-700/95 text-white backdrop-blur-lg border-white/40 px-8 py-4 text-lg rounded-xl shadow-xl hover:scale-105 transition-all duration-300"
+            >
+              ← Back to Main
+            </Button>
+            <MolecularBuilder />
           </div>
         )}
       </div>
